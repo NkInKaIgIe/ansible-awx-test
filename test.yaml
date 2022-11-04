@@ -1,4 +1,4 @@
----
+dsadsdsad---
 - hosts: all
   tasks:
     - name: ping
