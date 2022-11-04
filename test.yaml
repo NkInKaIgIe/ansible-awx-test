@@ -1,15 +1,1 @@
----
-- hosts: all
-  tasks:
-  - name: insertupdate
-    # blockinfile:
-    blockinfile:
-        dest: /usr/src/key.pem
-        block: |
-          line 1
-          line 2
-  - name: insert empty line before the marker
-    lineinfile:
-        dest: /usr/src/key.pem
-        regexp: '^# BEGIN ANSIBLE MANAGED BLOCK$'
-        line: '1trungnc3'
+1
