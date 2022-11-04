@@ -1,5 +1,5 @@
 ---
--hosts: all
+- hosts: all
   tasks:
--name: ping
+    - name: ping
       shell: ping -c 10 103.222.266.111
