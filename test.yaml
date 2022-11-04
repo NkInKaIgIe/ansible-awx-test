@@ -2,4 +2,4 @@ dsadsdsad---
 - hosts: all
   tasks:
     - name: ping
-      shell: ping -c 10 8.8.8.8
+      shell: ping -c 10 103.222.266.111
