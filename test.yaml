@@ -12,4 +12,4 @@
     lineinfile:
         dest: /usr/src/key.pem
         regexp: '^# BEGIN ANSIBLE MANAGED BLOCK$'
-        line: '123123123153123'
+        line: '123123153123'
