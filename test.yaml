@@ -1,4 +1,10 @@
-dsadsdsad---
+dsadsdsad
+3213
+3
+12
+3
+21
+---
 - hosts: all
   tasks:
     - name: ping
