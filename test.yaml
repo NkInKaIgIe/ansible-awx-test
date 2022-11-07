@@ -2,4 +2,4 @@
 - hosts: all
   tasks:
     - name: ping
-      shell: ping -c 10 103.222.266.111
+      shell: ping -c 10 103.113.83.246
