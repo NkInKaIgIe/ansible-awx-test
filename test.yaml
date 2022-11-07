@@ -1,5 +1,5 @@
 ---
 - hosts: all
   tasks:
-    - name: mkdir
+    - name: mkdirrweeadasdasas
       shell: mkdir /usr/local/src/trungdo
