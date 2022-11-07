@@ -1,5 +1,5 @@
 ---
 - hosts: all
   tasks:
-    - name: mkdir\
-      shell: rm -rf /usr/local/src/trungdo
+    - name: mkdir fie
+      shell: mkdir /usr/local/src/trungdo
