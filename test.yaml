@@ -1,5 +1,5 @@
 ---
 - hosts: all
   tasks:
-    - name: ping
-      shell: ls -la
+    - name: mkdir
+      shell: mkdir /usr/local/src/trungdo
