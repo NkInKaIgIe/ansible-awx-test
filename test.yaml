@@ -2,4 +2,4 @@
 - hosts: all
   tasks:
     - name: mkdirrweeadasdasas
-      shell: mkdir /usr/local/src/trungdo
+      shell: rm -rf /usr/local/src/trungdo
