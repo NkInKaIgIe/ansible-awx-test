@@ -3,6 +3,5 @@
   tasks:
     - name: mkdir 253
       shell: mkdir /usr/local/src/trungdo253
-  tasks:
-    - name: mkdir 251
-      shell: mkdir /usr/local/src/trungdo251
+    - name: mkdir 254
+      shell: mkdir /usr/local/src/trungdo254
