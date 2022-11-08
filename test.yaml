@@ -1,8 +1,8 @@
 ---
  - name: Shell mkdir
-   hosts: grouphost
+   hosts: 103.113.83.245
    tasks:
     - name: mkdir 11
-      shell: rm -rf /usr/local/src/testdemo1
+      shell: rm -rf /usr/local/src/testdemo2
     - name: mkdir 33
-      shell: mkdir /usr/local/src/testdemo10
+      shell: rm -rf /usr/local/src/testdemo10
