@@ -1,6 +1,6 @@
 ---
  - name: Shell mkdir
-   hosts: group host
+   hosts: grouphost
    tasks:
     - name: mkdir 1
       shell: mkdir /usr/local/src/testdemo3
