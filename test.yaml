@@ -1,5 +1,7 @@
 ---
-  tasks:
+ - name: Shell mkdir
+   hosts: 103.113.83.244
+   tasks:
     - name: mkdir 1
       shell: mkdir /usr/local/src/testdemo1
     - name: mkdir 3
