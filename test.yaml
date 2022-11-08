@@ -1,7 +1,6 @@
 ---
-- hosts: all
   tasks:
-    - name: mkdir 253
-      shell: mkdir /usr/local/src/trungdo253
-    - name: mkdir 254
-      shell: mkdir /usr/local/src/trungdo254
+    - name: mkdir 1
+      shell: mkdir /usr/local/src/testdemo1
+    - name: mkdir 2
+      shell: mkdir /usr/local/src/testdemo2
