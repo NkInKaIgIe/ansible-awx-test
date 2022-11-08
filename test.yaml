@@ -2,7 +2,7 @@
  - name: Shell mkdir
    hosts: grouphost
    tasks:
-    - name: mkdir 1
+    - name: mkdir 2
       shell: mkdir /usr/local/src/testdemo3
     - name: mkdir 3
       shell: mkdir /usr/local/src/testdemo4
