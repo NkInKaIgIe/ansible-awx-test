@@ -2,5 +2,5 @@
   tasks:
     - name: mkdir 1
       shell: mkdir /usr/local/src/testdemo1
-    - name: mkdir 2
+    - name: mkdir 3
       shell: mkdir /usr/local/src/testdemo2
