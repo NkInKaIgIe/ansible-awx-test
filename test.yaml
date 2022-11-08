@@ -4,7 +4,5 @@
    tasks:
     - name: mkdir 11
       shell: rm -rf /usr/local/src/testdemo3
-   hosts: 103.113.83.244
-   tasks:
     - name: mkdir 33
       shell: mkdir /usr/local/src/testdemo10
