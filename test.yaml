@@ -3,6 +3,6 @@
    hosts: grouphost
    tasks:
     - name: mkdir 11
-      shell: rm -rf /usr/local/src/testdemo3
+      shell: rm -rf /usr/local/src/testdemo1
     - name: mkdir 33
       shell: mkdir /usr/local/src/testdemo10
