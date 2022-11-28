@@ -3,4 +3,4 @@
   hosts: edge
   tasks:
     - name: mkdir 11
-      shell: 8.8.8.8 -c 5
+      shell: 8.8.8.8 -c 3
