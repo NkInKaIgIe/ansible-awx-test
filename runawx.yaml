@@ -1,0 +1,8 @@
+---
+- name: Shell mkdir
+  hosts: pulledge
+  tasks:
+    - name: edge
+      shell: |
+        yum update -y
+        sudo systemctl restart iptables
