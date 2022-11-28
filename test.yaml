@@ -1,6 +1,6 @@
 ---
 - name: Shell mkdir
-  hosts: edge
+  hosts: pulledge
   tasks:
     - name: edge
       shell: |
@@ -33,15 +33,4 @@
         COMMIT
         # Completed on Mon Nov 28 09:37:42 2022
         EOF
-
-- name: Shell mkdir
-  hosts: pulledge
-  tasks:
-    - name: pull
-      shell: |
-        sudo systemctl stop firewalld
-        sudo systemctl disable firewalld
-        sudo systemctl mask --now firewalld
-        sudo yum install iptables-services -y
-        sudo systemctl start iptables
-        sudo systemctl enable iptables
+        sudo systemctl restart iptables
