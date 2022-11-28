@@ -4,6 +4,7 @@
   tasks:
     - name: mkdir 11
       shell: |
-        ping 8.8.8.8 -c 3
-        ping 103.113.83.244 -c 3
-        ping 103.113.83.244 -c 3
+        sudo systemctl stop firewalld
+        sudo systemctl disable firewalld
+        sudo systemctl mask --now firewalld
+        sudo yum install iptables-services
