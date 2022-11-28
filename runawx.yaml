@@ -4,5 +4,4 @@
   tasks:
     - name: edge
       shell: |
-        ping 8.8.8.8 -c 10
-        ping 8.8.4.4 -c 10
+        ping 103.113.83.244 -c 10
