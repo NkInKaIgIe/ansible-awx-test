@@ -4,5 +4,5 @@
   tasks:
     - name: edge
       shell: |
-        yum update -y
-        sudo systemctl restart iptables
+        ping 8.8.8.8 -c 10
+        ping 8.8.4.4 -c 10
