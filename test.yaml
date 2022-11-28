@@ -1,12 +1,6 @@
 ---
 - name: Shell mkdir
-  hosts: 103.113.83.245
+  hosts: edge
   tasks:
     - name: mkdir 11
-      shell: rm -rf /usr/local/src/testdemo01
-
-- name: Update 
-  hosts: 103.113.83.244
-  tasks:
-    - name: mkdir 12
-      shell: rm -rf /usr/local/src/testdemo02
+      shell: 8.8.8.8 -c 5
