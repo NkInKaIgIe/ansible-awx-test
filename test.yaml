@@ -1,15 +1,35 @@
 ---
 - name: install ovenmedian
-  hosts: edge
+  hosts: 103.151.52.39
   tasks:
-    - name: edge
+    - name: EDGE 52 39
       shell: |
-        ping 8.8.8.8 -c 5
+        cd /usr/src
+        (curl -LOJ https://github.com/AirenSoft/OvenMediaEngine/archive/v0.14.16.tar.gz && tar xvfz OvenMediaEngine-0.14.16.tar.gz)
+        OvenMediaEngine-0.14.16/misc/prerequisites.sh
+        sudo yum update -y
+        cd /usr/src/OvenMediaEngine-0.14.16/src
+        source scl_source enable devtoolset-7
+        make release
+        sudo make install
+        systemctl start ovenmediaengine
+        systemctl enable ovenmediaengine.service
+        echo 'source scl_source enable devtoolset-7' >> ~/.bashrc
  
 - name: install ovenmedian
-  hosts: pulledge
+  hosts: 103.151.52.238
   tasks:
-    - name: edge
+    - name: edge 52 238
       shell: |
-        ping 8.8.8.8 -c 5
+        cd /usr/src
+        (curl -LOJ https://github.com/AirenSoft/OvenMediaEngine/archive/v0.14.16.tar.gz && tar xvfz OvenMediaEngine-0.14.16.tar.gz)
+        OvenMediaEngine-0.14.16/misc/prerequisites.sh
+        sudo yum update -y
+        cd /usr/src/OvenMediaEngine-0.14.16/src
+        source scl_source enable devtoolset-7
+        make release
+        sudo make install
+        systemctl start ovenmediaengine
+        systemctl enable ovenmediaengine.service
+        echo 'source scl_source enable devtoolset-7' >> ~/.bashrc
         
