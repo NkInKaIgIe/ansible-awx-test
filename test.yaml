@@ -1,7 +1,15 @@
 ---
 - name: install ovenmedian
-  hosts: edgepro
+  hosts: edge
   tasks:
     - name: edge
       shell: |
-        yum install nload -y
+        systemctl stop ovenmediaengine
+ 
+- name: install ovenmedian
+  hosts: pulledge
+  tasks:
+    - name: edge
+      shell: |
+        systemctl stop ovenmediaengine
+        
