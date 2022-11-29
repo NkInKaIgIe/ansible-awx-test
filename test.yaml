@@ -4,14 +4,4 @@
   tasks:
     - name: edge
       shell: |
-        cd /usr/src
-        (curl -LOJ https://github.com/AirenSoft/OvenMediaEngine/archive/v0.14.16.tar.gz && tar xvfz OvenMediaEngine-0.14.16.tar.gz)
-        OvenMediaEngine-0.14.16/misc/prerequisites.sh
-        sudo yum update -y
-        cd ../src/
-        source scl_source enable devtoolset-7
-        make release
-        sudo make install
-        systemctl start ovenmediaengine
-        systemctl enable ovenmediaengine.service
-        echo 'source scl_source enable devtoolset-7' >> ~/.bashrc
+        yum install nload -y
