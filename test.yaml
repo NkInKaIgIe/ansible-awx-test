@@ -4,4 +4,4 @@
   tasks:
     - name: EDGE 52 39
       shell: |
-        yum install ntop -y
+        yum install nload -y
